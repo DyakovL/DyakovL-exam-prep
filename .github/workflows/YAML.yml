@@ -22,6 +22,8 @@ jobs:
         uses: npm install
       - name: Start the program
         run: npm run start
+      - name: Install Playwright
+        run: npx playwright install
       - name: Run Tests
         run: npm run tests/test:ui
 
